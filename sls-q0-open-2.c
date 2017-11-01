@@ -71,7 +71,7 @@ int main(int argc, char **argv) {
   Data tmpdata;
   ListNode *newnode, *thisnode, *nextnode, *startnode;
 
-  int i;
+  int i, j;
   int itime;
   int x, v, xp1;
   int vsum = 0;
@@ -116,7 +116,7 @@ int main(int argc, char **argv) {
 
     alpha = alpha_ini + delta_alpha * (double)iter;
     /*ある値 alpha について複数回のデータを作る*/
-    for (i = 0; i < n_alpha; i++) {
+    for (j = 0; j < n_alpha; j++) {
 
       /*******  list , road �̍ŏ��̒l�������� *****************/
 
